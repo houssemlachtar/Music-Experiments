@@ -2,13 +2,11 @@
  * kalimba.js
  */
 ;(function(window) {
-	/**
-	 * Kalimba obj. Tuned to CMaj (C4..C5)
-	 */
+
 	function Kalimba(el, options) {
 		this.el = el;
 		this.tines = [].slice.call(this.el.querySelectorAll('.kalimba__tine'));
-		this.midiCode = 108; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 108; 
 		this._initEvents();
 	}
 
