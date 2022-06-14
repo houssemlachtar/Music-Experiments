@@ -1,14 +1,10 @@
 /**
  * piano.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
  */
 ;(function(window) {
 	
 	/**
-	 * Piano obj. 88 keys piano (52 natural + 36 flat).
+	 * Piano obj. 88 keys piano.
 	 */
 	function Piano(el, options) {
 		this.el = el;
@@ -21,7 +17,7 @@
 		// 52 natural keys and 36 flat/sharp keys
 		this.naturalKeysTotal = this.naturalKeys.length;
 		this.flatKeysTotal = this.flatKeys.length;
-		this.midiCode = 0; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 0; 
 		this._init();
 	}
 
@@ -30,16 +26,16 @@
 	 */
 	Piano.prototype.options = {
 		layouts: {
-			// keys go from 1 (inclusive) to 52 (inclusive). These are the "white" keys!
-			// keyboardMapping go from 0 (inclusive) to 87 (inclusive).
+			// These are the "white" keys!
+			// keyboardMapping 
 			
 			// The different layouts:
 			keys: {
-				// the "default" label should not be changed!
+				
 				'default': {
 					keys: [1, 52],
 					keyboardMapping: {
-						// white/natural keys:
+						// white keys:
 						'q' : 15,
 						'w' : 17,
 						'e' : 19,
@@ -69,7 +65,7 @@
 						',' : 60,
 						'.' : 62,
 						'-' : 63,
-						// black/flat/sharp keys:
+						// black keys:
 						'1' : 16,
 						'2' : 18,
 						'3' : 21,
@@ -86,7 +82,7 @@
 				'large': {
 					keys: [24, 45],
 					keyboardMapping: {
-						// white/natural keys:
+						// white keys:
 						'y' : 39,
 						'u' : 41,
 						'i' : 43,
@@ -109,7 +105,7 @@
 						'n' : 72,
 						'm' : 74,
 						',' : 75,
-						// black/flat/sharp keys:
+						// black keys:
 						'1' : 40,
 						'2' : 42,
 						'3' : 45,
@@ -131,7 +127,7 @@
 				'medium': {
 					keys: [24, 38],
 					keyboardMapping: {
-						// white/natural keys:
+						// white keys:
 						'q' : 39,
 						'w' : 41,
 						'e' : 43,
@@ -147,7 +143,7 @@
 						'd' : 60,
 						'f' : 62,
 						'g' : 63,
-						// black/flat/sharp keys:
+						// black keys:
 						'1' : 40,
 						'2' : 42,
 						'3' : 45,
@@ -164,7 +160,7 @@
 				'small': {
 					keys: [24, 31],
 					keyboardMapping: {
-						// white/natural keys:
+						// white keys:
 						'q' : 39,
 						'w' : 41,
 						'e' : 43,
@@ -173,8 +169,7 @@
 						'y' : 48,
 						'u' : 50,
 						'i' : 51,
-						// black/flat/sharp keys:
-						// black/flat/sharp keys:
+						// black keys:
 						'1' : 40,
 						'2' : 42,
 						'3' : 45,
@@ -184,7 +179,7 @@
 					}
 				}
 			},
-			// Assign the different layouts depending on the screen size.
+			// Assigning the different layouts depending on the screen size.
 			mediaQueries: [
 				{ key: 'screen and (min-width:120em)', type: 'default' },
 				{ key: 'screen and (min-width:50em) and (max-width:120em)', type: 'large' },
@@ -194,9 +189,7 @@
 		}
 	};
 
-	/**
-	 * Init.
-	 */
+	/* Init */
 	Piano.prototype._init = function() {
 		var self = this;
 		this.keysRange = this.options.layouts.keys['default'].keys;
