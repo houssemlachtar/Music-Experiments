@@ -10,7 +10,7 @@
 		this.options = extend({}, this.options);
 		extend(this.options, options);
 		this.tubes = [].slice.call(this.el.querySelectorAll('.chime__pipe'));
-		this.midiCode = 14; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 14; 
 		this._initEvents();
 	}
 
