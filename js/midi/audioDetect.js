@@ -4,9 +4,6 @@
 	----------------------------------------------------------
 	https://github.com/mudcube/MIDI.js
 	----------------------------------------------------------
-	Probably, Maybe, No... Absolutely!
-	Test to see what types of <audio> MIME types are playable by the browser.
-	----------------------------------------------------------
 */
 
 if (typeof MIDI === 'undefined') MIDI = {};
