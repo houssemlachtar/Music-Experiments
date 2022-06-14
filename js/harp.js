@@ -3,13 +3,11 @@
  */
 ;(function(window) {
 
-	/**
-	 * Harp obj. 47 strings (C1, ..., G7).
-	 */
+
 	function Harp(el, options) {
 		this.el = el;
 		this.strings = [].slice.call(this.el.querySelectorAll('.harp__string-hover'));
-		this.midiCode = 46; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 46; 
 		this._initEvents();
 	}
 
