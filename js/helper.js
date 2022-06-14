@@ -15,7 +15,6 @@ function mobilecheck() {
 	return check;
 }
 
-// From https://davidwalsh.name/javascript-debounce-function.
 function debounce(func, wait, immediate) {
 	var timeout;
 	return function() {
