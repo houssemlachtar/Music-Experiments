@@ -1,7 +1,5 @@
 (function() {
-//
 
-// Siri Wave iOS9 Style curve
 
 function SiriWave9Curve(opt) {
 	this.controller = opt.controller;
