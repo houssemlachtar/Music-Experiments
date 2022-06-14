@@ -31,7 +31,7 @@ function debounce(func, wait, immediate) {
 	};
 };
 
-// from http://www.quirksmode.org/js/events_properties.html#position
+
 function getMousePos(e) {
 	var posx = 0, posy = 0;
 	if (!e) var e = window.event;
