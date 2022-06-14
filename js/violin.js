@@ -1,14 +1,10 @@
 /**
  * violin.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
  */
 ;(function(window) {
 
 	/**
-	 * Violin obj. For this demo the Violin will only play natural notes from C2 to C5.
+	 * Violin obj.
 	 */
 	function Violin(el) {
 		this.el = el;
