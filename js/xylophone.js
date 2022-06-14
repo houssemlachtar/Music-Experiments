@@ -1,14 +1,10 @@
 /**
  * xylophone.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
  */
 ;(function(window) {
 	
 	/**
-	 * Xylophone obj. 44 keys (26 natural + 18 flat).
+	 * Xylophone obj. 44 keys.
 	 */
 	function Xylophone(el) {
 		this.el = el;
@@ -16,7 +12,7 @@
 		this.naturalKeys = [].slice.call(this.keyboard.querySelectorAll('.xylophone__keys--natural > rect'));
 		this.flatKeys = [].slice.call(this.keyboard.querySelectorAll('.xylophone__keys--flat > rect'));
 		this.allkeys = this.naturalKeys.concat(this.flatKeys);
-		this.midiCode = 13; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 13; 
 		
 		this._initEvents();
 	}
