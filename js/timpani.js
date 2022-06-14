@@ -1,18 +1,14 @@
 /**
  * timpani.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
  */
 ;(function(window) {
 	/**
-	 * Timpani (no pedals!) obj. Tuned to F1, A1#, D2, F2
+	 * Timpani F1, A1#, D2, F2
 	 */
 	function Timpani(el) {
 		this.el = el;
 		this.drums = [].slice.call(this.el.querySelectorAll('.timpani__drum'));
-		this.midiCode = 47; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 47; 
 		this._initEvents();
 	}
 
