@@ -23,7 +23,6 @@
 
 	function init() {
 		// The canvas animation for the wave.
-		// https://github.com/caffeinalab/siriwavejs
 		var siriWave = new SiriWave({
 			container: document.getElementById('wavebg'),
 			//cover: true,
