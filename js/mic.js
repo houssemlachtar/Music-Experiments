@@ -1,13 +1,9 @@
 /**
  * mic.js
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
  */
 ;(function(window) {
 
-	// From https://www.html5rocks.com/en/tutorials/webaudio/intro/
+	
 	function BufferLoader(context, urlList, callback) {
 		this.context = context;
 		this.urlList = urlList;
