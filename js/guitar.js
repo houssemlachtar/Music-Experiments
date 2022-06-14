@@ -9,7 +9,7 @@
 	function Guitar(el) {
 		this.el = el;
 		this.strings = [].slice.call(this.el.querySelectorAll('.guitar__string-hover'));
-		this.midiCode = 24; // Check http://www.ccarh.org/courses/253/handout/gminstruments/
+		this.midiCode = 24; 
 		this.openChords = false;
 		// Some random chords to choose from depending on the mouse position (x-axis) that the user starts to "drag".
 		this.chords = [
